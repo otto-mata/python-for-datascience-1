@@ -30,7 +30,8 @@ def ft_blue(mat: np.ndarray) -> np.ndarray:
 
 
 def ft_grey(mat: np.ndarray) -> np.ndarray:
-    return mat
+    grey = np.dot(mat[..., ::-1], [0.299, 0.587, 0.114]).astype(np.uint8)
+    return grey
 
 
 im = ft_load("landscape.jpg")
