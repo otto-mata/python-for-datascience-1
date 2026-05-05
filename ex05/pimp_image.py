@@ -1,6 +1,4 @@
-import cv2
 import numpy as np
-from load_image import ft_load
 
 
 def ft_invert(mat: np.ndarray) -> np.ndarray:
