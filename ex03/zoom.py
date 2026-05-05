@@ -5,7 +5,7 @@ from load_image import ft_load
 
 
 def main(argc: int, argv: list[str]) -> int:
-    """"""
+    """Crop and display animal.jpeg"""
     try:
         im = ft_load("animal.jpeg")
         assert im.ndim == 3, "incorrect data dimensions"

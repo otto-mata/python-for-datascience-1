@@ -17,8 +17,3 @@ def slice_me(family: list[list[_T]], start: int, end: int) -> list[list[_T]]:
     except Exception as ex:
         print(f"{ex.__class__.__name__}: {ex}")
     return []
-
-
-family = [[1.80, 78.4], [2.15, 102.7], [2.10, 98.5], [1.88, 75.2]]
-print(slice_me(family, 0, 2))
-print(slice_me(family, 1, -2))
